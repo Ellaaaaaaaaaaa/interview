@@ -1,7 +1,13 @@
 # vue
 
-目前看了一下这个挺完整全面的，vue官方文档看着想睡觉
+这份笔记主要记录的是vue2的语法
+
+看了一下这个vue2全家桶列举挺完整全面的
 <https://blog.csdn.net/qq_44663761/article/details/122328822?spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-16-122328822-blog-135767247.235%5Ev43%5Econtrol&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-16-122328822-blog-135767247.235%5Ev43%5Econtrol&utm_relevant_index=17>
+
+vue3的补充更新语法<https://24kcs.github.io/vue3_study/chapter4/01_Composition%20API_%E5%B8%B8%E7%94%A8%E9%83%A8%E5%88%86.html>
+
+vue3的关键在于理解Composition (组合) API和setup的使用
 
 ## vue基本语法
 
@@ -112,6 +118,17 @@ var TodoItem = {
 
 生命周期函数是指vue实例在某一个时间点会自动执行的函数
 ![Alt text](image/image-7.png)
+图里是vue2的，vue3在命名上多了on和setup
+2.x 版本生命周期相对应的组合式 API
+beforeCreate -> 使用 setup()
+created -> 使用 setup()
+beforeMount -> onBeforeMount
+mounted -> onMounted
+beforeUpdate -> onBeforeUpdate
+updated -> onUpdated
+beforeDestroy -> onBeforeUnmount
+destroyed -> onUnmounted
+errorCaptured -> onErrorCaptured
 
 template
 插值表达式{{}}
@@ -648,4 +665,6 @@ extend和component类似
 3. router-view不渲染
 由于没有后端支持，创建路由的history部分要用hash
 <https://blog.csdn.net/weixin_43575792/article/details/122655356>
-4.
+4. 基本都是围绕setup里面响应式数据声明出的问题
+ref和reactive
+5. vuex和vue-router部分有了更新

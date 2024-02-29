@@ -116,19 +116,19 @@ var TodoItem = {
   });      
 ```
 
-生命周期函数是指vue实例在某一个时间点会自动执行的函数
+生命周期函数是指vue实例在某一个时间点会自动执行的函数  
 ![Alt text](image/image-7.png)
-图里是vue2的，vue3在命名上多了on和setup
-2.x 版本生命周期相对应的组合式 API
-beforeCreate -> 使用 setup()
-created -> 使用 setup()
-beforeMount -> onBeforeMount
-mounted -> onMounted
-beforeUpdate -> onBeforeUpdate
-updated -> onUpdated
-beforeDestroy -> onBeforeUnmount
-destroyed -> onUnmounted
-errorCaptured -> onErrorCaptured
+图里是vue2的，vue3在命名上多了on和setup  
+2.x 版本生命周期相对应的组合式 API  
+beforeCreate -> 使用 setup()  
+created -> 使用 setup()  
+beforeMount -> onBeforeMount  
+mounted -> onMounted  
+beforeUpdate -> onBeforeUpdate  
+updated -> onUpdated  
+beforeDestroy -> onBeforeUnmount  
+destroyed -> onUnmounted  
+errorCaptured -> onErrorCaptured  
 
 template
 插值表达式{{}}
@@ -665,6 +665,6 @@ extend和component类似
 3. router-view不渲染
 由于没有后端支持，创建路由的history部分要用hash
 <https://blog.csdn.net/weixin_43575792/article/details/122655356>
-4. 基本都是围绕setup里面响应式数据声明出的问题
-ref和reactive
+4. 基本都是围绕setup里面响应式数据声明出的问题  
+ref和reactive  
 5. vuex和vue-router部分有了更新

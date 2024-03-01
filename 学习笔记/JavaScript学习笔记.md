@@ -95,7 +95,7 @@ toString() 每个值的字符串形式，以逗号分隔
 valueOf()
 join()分隔符字符串
 push() pop() stack
-shift()移除第一个 unshift()前端添加 list
+shift()移除第一个 unshift()前端添加 list queue
 reverse()翻转
 sort()比较字符串 小心15<5，从字符串上看，定义compare函数作为参数传入sort()
 concat() 拼接字符串和多个数组的每一项

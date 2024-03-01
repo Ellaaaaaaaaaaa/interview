@@ -667,4 +667,7 @@ extend和component类似
 <https://blog.csdn.net/weixin_43575792/article/details/122655356>
 4. 基本都是围绕setup里面响应式数据声明出的问题  
 ref和reactive  
+![alt text](image/image-25.png.png)
+reactive对象赋值是深拷贝地址会变化，如果不是每个内部属性挨个赋值响应式对象，整体对象就会失去响应性，reactive返回的是对原始对象的引用，使用toRefs来解构  
+toRef是将对象的属性转化为ref对象，浅拷贝，跟原本对象的属性对应地址引用是同一个，可以修改
 5. vuex和vue-router部分有了更新
